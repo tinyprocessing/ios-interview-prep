@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senior iOS Interview Prep — 300 Q&amp;A</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button id="menuToggle" class="icon-btn" aria-label="Toggle sidebar" title="Toggle sidebar">☰</button>
+    <h1 class="brand">Senior iOS Interview Prep</h1>
+    <div class="topbar-spacer"></div>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search questions & answers…" autocomplete="off" />
+    </div>
+    <div class="topbar-actions">
+      <label class="switch" title="Show only questions you haven't learned">
+        <input id="unlearnedOnly" type="checkbox" />
+        <span>Unlearned only</span>
+      </label>
+      <button id="expandAll" class="btn" title="Expand all visible cards">Expand all</button>
+      <button id="collapseAll" class="btn" title="Collapse all visible cards">Collapse all</button>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle light/dark">🌓</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="progress-overall">
+        <div class="progress-label">
+          <span>Overall progress</span>
+          <span id="overallCount">0 / 0</span>
+        </div>
+        <div class="progress-bar"><div id="overallBar" class="progress-fill"></div></div>
+      </div>
+      <nav id="nav" class="nav"></nav>
+      <button id="resetProgress" class="btn btn-ghost reset-btn" title="Clear all learned checkmarks">Reset progress</button>
+    </aside>
+
+    <main id="content" class="content">
+      <div id="cards" class="cards"></div>
+      <div id="empty" class="empty" hidden>No questions match your filters.</div>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
