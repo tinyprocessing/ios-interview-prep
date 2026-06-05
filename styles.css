@@ -331,12 +331,34 @@ html, body {
   border-color: var(--answer-bd);
   background: var(--answer-tint);
 }
+.q-wrap { flex: 1 1 auto; min-width: 0; }
 .q-text {
-  flex: 1 1 auto;
   font-weight: 600;
   font-size: 15.5px;
   line-height: 1.5;
   letter-spacing: -0.005em;
+}
+.cat-pill {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border-radius: 5px;
+  padding: 1px 7px;
+  margin-bottom: 6px;
+}
+
+/* ===== Search status bar ===== */
+.search-status {
+  font-size: 13px;
+  color: var(--text-dim);
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  padding: 8px 13px;
+  margin-bottom: 14px;
 }
 .card-head-right { display: flex; align-items: center; gap: 12px; flex: 0 0 auto; padding-top: 1px; }
 .learn-check {
