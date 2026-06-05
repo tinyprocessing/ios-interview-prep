@@ -29,6 +29,7 @@ Each question has four parts:
 
 ## Features
 
+- **Bilingual** — English by default, switch to Russian with one click (RU/EN toggle); choice is remembered
 - Live search across questions and answers
 - Cards collapsed by default (self-test mode) — click to reveal the answer
 - "Learned" checkboxes with progress tracking per category (saved in `localStorage`)
